@@ -1,0 +1,5 @@
+The binaries here are compiled with Microsoft Visual C++ 2010 (a.k.a. VC10), in 64-bit mode. The following configurations are built:
+
+Debug\ - no optimizations, using the static debug C runtime (/MTd)
+Release\ - optimizations on, using the static C runtime (/MT)
+ReleaseDLL\ - the library is compiled in a .dll (libcpuid.dll), which you'd need to ship alongside your executable. Static C runtime.
