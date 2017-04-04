@@ -28,6 +28,7 @@ public:
 	bool Query();
 
 	void PrintInfo();
+	void PrintInfo_d();
 
 	// statics
 	static const char* mapVendor(cpu_vendor_t vendor);

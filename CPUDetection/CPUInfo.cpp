@@ -116,6 +116,26 @@ void CPUInfo::PrintInfo() {
 	cout << "\t\t\"SSE42\" : " << getTrueFalse(Features.SSE42) << "," << endl; // bool
 	cout << "\t\t\"SSE41\" : " << getTrueFalse(Features.SSE41) << "," << endl; // bool
 	cout << "\t\t\"SSE2\" : " << getTrueFalse(Features.SSE2) << endl; // bool
-	cout << "\t\}" << endl;
+	cout << "\t}" << endl;
+	cout << "}" << endl;
+}
+
+void CPUInfo::PrintInfo_d() {
+	cout << "{";
+	cout << "\"Brand\" : \"" << Brand << "\","; // string
+
+	cout << "\"PhysicalCores\" : " << PhysicalCores << ","; // num
+	cout << "\"LogicalCores\" : " << LogicalCores << ","; // num
+	cout << "\"TotalCores\" : " << TotalCores << ","; // num
+	cout << "\"PhysicalCPUsCount\" : " << PhysicalCPUsCount << ","; // num
+
+	cout << "\"Features\" : {";
+	cout << "\"AVX2\" : " << getTrueFalse(Features.AVX2) << ","; // bool
+	cout << "\"AVX\" : " << getTrueFalse(Features.AVX) << ","; // bool
+	cout << "\"AES\" : " << getTrueFalse(Features.AES) << ","; // bool
+	cout << "\"SSE42\" : " << getTrueFalse(Features.SSE42) << ","; // bool
+	cout << "\"SSE41\" : " << getTrueFalse(Features.SSE41) << ","; // bool
+	cout << "\"SSE2\" : " << getTrueFalse(Features.SSE2); // bool
 	cout << "}";
+	cout << "}" << endl;
 }
